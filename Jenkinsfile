@@ -1,5 +1,11 @@
 pipeline {
-    agent any
+    agent {
+label{
+		label "master"
+		customWorkspace "/mnt/vishwesh"
+}
+}
+
 stages {
         stage ('make') {
             steps {
