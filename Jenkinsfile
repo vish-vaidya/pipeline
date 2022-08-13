@@ -1,9 +1,9 @@
 pipeline {
     agent any
 stages {
-        stage ('coping') {
+        stage ('make') {
             steps {
-                sh 'cp -r index.html /var/www/html'
+                sh 'mkdir vish'
             }
         } 
         stage('restart') {
